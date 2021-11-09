@@ -1,10 +1,4 @@
-Conteúdo
-Sobre o Projeto
-Tecnologias
-Screenshots
-Iniciando o Projeto
-Licença
-Contato
+
 Sobre o projeto
 App de aluguel de carros, desenvolvido em React Native, durante o curso Ignite da Rocketseat.
 
