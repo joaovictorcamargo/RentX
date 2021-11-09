@@ -24,4 +24,5 @@ Animação com lottie-react-native
 Tela de Splash com expo-splash-screen
 Calendário com react-native-calendars
 📸 Screenshots
-https://github.com/luiizsilverio/rentx/blob/main/assets/rentx.gif
+
+![vdd](https://user-images.githubusercontent.com/80647040/140925584-d7e10e99-3102-4c6f-a7b0-a948439a345e.gif)
