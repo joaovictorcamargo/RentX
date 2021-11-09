@@ -26,3 +26,21 @@ Calendário com react-native-calendars
 📸 Screenshots
 
 ![vdd](https://user-images.githubusercontent.com/80647040/140925584-d7e10e99-3102-4c6f-a7b0-a948439a345e.gif)
+
+🚗 Iniciando o projeto
+# Baixe o repositório com git clone e entre na pasta do projeto.
+$ git clone https://github.com/luiizsilverio/rentx.git
+
+# Execute yarn para instalar as dependências (ou npm install)
+$ yarn
+
+# Para iniciar a aplicação, primeiro inicie a API
+$ yarn server
+
+$ expo start
+# ou yarn android
+⚖️ Licença
+Este projeto está licenciado sob a licença MIT.
+
+📧 Contato
+E-mail: jc7155004@gmail.com
