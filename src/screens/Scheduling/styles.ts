@@ -57,7 +57,7 @@ export const DateValue = styled.Text<DateValueProps>`
 `;
 
 export const Content = styled.ScrollView.attrs({
-    contentContainerStyle:{
+    contentContainerStyle: {
         paddingBottom: 24
     },
     showsVerticalScrollIndicator: false
@@ -67,6 +67,6 @@ export const Footer = styled.View`
     width: 100%;
     background-color: ${({ theme }) => theme.colors.background_primary};
     padding: 24px 24px ${getBottomSpace() + 24}px;
-    box-shadow: 5px 5px 25px ${({theme}) => theme.colors.text};
+    box-shadow: 5px 5px 25px ${({ theme }) => theme.colors.text};
     /* padding: 24px; */
 `;

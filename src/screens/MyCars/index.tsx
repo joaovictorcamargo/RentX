@@ -8,7 +8,7 @@ import { Car } from '../../components/Car';
 import { LoadAnimation } from '../../components/LoadAnimation';
 
 import { CarDTO } from '../../dtos/CarDTO';
-import {api} from '../../services/api';
+import { api } from '../../services/api';
 
 import {
     Container,

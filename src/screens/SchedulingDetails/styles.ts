@@ -105,7 +105,7 @@ export const RentalPeriod = styled.View`
 export const CalendarIcon = styled.View`
     width: 48px;
     height: 48px;
-    background-color: ${({theme}) => theme.colors.main};
+    background-color: ${({ theme }) => theme.colors.main};
     justify-content: center;
     align-items: center;
 `;
@@ -133,27 +133,27 @@ export const RentalPrice = styled.View`
     justify-content: space-between;
     align-items: center; */
 `;
-    
+
 export const RentalPriceLabel = styled.Text`
     font-family: ${({ theme }) => theme.fonts.primary_500};
     color: ${({ theme }) => theme.colors.text_detail};
     font-size: ${RFValue(10)}px;
     text-transform: uppercase;
 `;
-    
+
 export const RentalPriceDetails = styled.View`
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 `;
-    
+
 export const RentalPriceQuota = styled.Text`
     font-family: ${({ theme }) => theme.fonts.primary_500};
     color: ${({ theme }) => theme.colors.title};
     font-size: ${RFValue(15)}px;
 `;
-    
+
 export const RentalPriceTotal = styled.Text`
     font-family: ${({ theme }) => theme.fonts.secondary_500};
     color: ${({ theme }) => theme.colors.success};

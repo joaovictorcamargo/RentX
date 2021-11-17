@@ -4,14 +4,6 @@ import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { useTheme } from 'styled-components/native';
 
-import { BackButton } from '../../components/BackButton';
-import { ImageSlider } from '../../components/ImageSlider';
-import { Accessory } from '../../components/Accessory';
-import { Button } from '../../components/Button';
-
-import { getAccessoryIcons } from '../../utils/getAccessoryIcons';
-import { CarDTO } from '../../dtos/CarDTO';
-
 import Animated, {
     useSharedValue,
     useAnimatedScrollHandler,
@@ -20,7 +12,13 @@ import Animated, {
     Extrapolate
 } from 'react-native-reanimated';
 
+import { BackButton } from '../../components/BackButton';
+import { ImageSlider } from '../../components/ImageSlider';
+import { Accessory } from '../../components/Accessory';
+import { Button } from '../../components/Button';
 
+import { getAccessoryIcons } from '../../utils/getAccessoryIcons';
+import { CarDTO } from '../../dtos/CarDTO';
 
 import {
     Container,

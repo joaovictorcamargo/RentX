@@ -46,4 +46,3 @@ export const MyCarsButton = styled(RectButton)`
     bottom: 20px;
     right: 22px;
 `;
-

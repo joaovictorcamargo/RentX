@@ -48,12 +48,12 @@ export function Home() {
 
     const onGestureEvent = useAnimatedGestureHandler({
         onStart(_, ctx: any) {
-            ctx.positionX = positionX.value;
-            ctx.positionY = positionY.value;
+            ctx.positionx = positionX.value;
+            ctx.positiony = positionY.value;
         },
         onActive(event, ctx) {
-            positionX.value = ctx.positionX + event.translationX,
-                positionY.value = ctx.positionY + event.translationY
+            positionX.value = ctx.positionx + event.translationX,
+                positionY.value = ctx.positiony + event.translationY
         },
         onEnd() {
             positionX.value = withSpring(0);
