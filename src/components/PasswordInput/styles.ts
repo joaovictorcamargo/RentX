@@ -8,6 +8,7 @@ interface ContainerProps {
 
 export const Container = styled.View<ContainerProps>`
 flex-direction: row;
+margin-bottom: 8px;
 
 ${({isFocused, theme}) => isFocused && css`
 border-bottom-width: 2px;
@@ -35,7 +36,7 @@ color: ${({theme}) => theme.colors.text};
 font-family: ${({theme}) => theme.fonts.primary_400};
 font-size: ${RFValue(15)}px;
 
-
 padding: 0 23px;
+
 `;
 

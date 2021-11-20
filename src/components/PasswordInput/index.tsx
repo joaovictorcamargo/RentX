@@ -6,7 +6,7 @@ import { BorderlessButton } from 'react-native-gesture-handler';
 
 
 import {
- Container,
+    Container,
  InputText,
  IconContainer,
 
@@ -48,8 +48,8 @@ setIsFilled(!!value);
 
 
  return (
- <Container isFocused={isFocused}>
-     <IconContainer>
+ <Container >
+     <IconContainer isFocused={isFocused}>
      <Feather
 name={iconName}
 size={24}
@@ -60,6 +60,7 @@ color={(isFocused || isFilled) ? theme.colors.main : theme.colors.text_detail }
 
 
 <InputText 
+isFocused={isFocused}
 onFocus={handleInputFocus}
 onBlur={handleInputBlur}
 secureTextEntry={isPasswordVisible}

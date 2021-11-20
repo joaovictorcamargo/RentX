@@ -4,13 +4,15 @@ import {
     KeyboardAvoidingView,
     TouchableWithoutFeedback,
     Keyboard,
+    Alert,
 } from 'react-native';
-
+import * as Yup from 'yup';
 import theme from '../../styles/theme';
+
 import {Button} from '../../components/Button';
 import {Input} from '../../components/Input';
 import {PasswordInput} from '../../components/PasswordInput';
-
+import { useNavigation } from '@react-navigation/native';
 
 import {
  Container,
@@ -26,6 +28,35 @@ export function SignIn(){
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
 
+async function handleSignIn(){
+    try{
+        const schema = Yup.object().shape({
+            email: Yup.string()
+            .required('E-mail obrigatório')
+            .email('Digite um e-mail valido'),
+            password: Yup.string()
+            .required('A senha é obrigatória')
+        });
+        await schema.validate({email, password});
+        Alert.alert('Tudo certo');
+        }catch(error){
+if(error instanceof Yup.ValidationError){
+ Alert.alert('Opa', error.message);
+}else {
+     Alert.alert('Erro na autenticação', 
+     'Ocorreu um erro ao fazer login, verifique as credênciais')
+}
+        }
+        
+    }
+
+    const navigation = useNavigation();
+
+    function handleNewAccount(){
+        navigation.navigate('FirstStep');
+
+    }
+
  return (
      <KeyboardAvoidingView behavior="position" enabled>
          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -36,6 +67,7 @@ export function SignIn(){
      translucent
      />
 <Header>
+
 <Title>Estamos{'\n'} quase lá.</Title>
 <Subtitle>Faça seu login para começar{'\n'} 
 uma experiência incrível.
@@ -66,8 +98,8 @@ value={password}
 <Footer>
     <Button
     title="Login"
-    onPress={()=>{}}
-    enabled={false}
+    onPress={handleSignIn}
+    enabled={true}
     loading={false}
     />
 </Footer>
@@ -77,8 +109,8 @@ value={password}
     title="Criar conta gratuita"
     light
     color={theme.colors.background_secondary}
-    onPress={()=>{}}
-    enabled={false}
+    onPress={handleNewAccount}
+    enabled={true}
     loading={false}
     />
 </Footer>
