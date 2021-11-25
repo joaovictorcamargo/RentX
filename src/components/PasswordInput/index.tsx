@@ -64,6 +64,7 @@ isFocused={isFocused}
 onFocus={handleInputFocus}
 onBlur={handleInputBlur}
 secureTextEntry={isPasswordVisible}
+autoCorrect={false}
 {...rest}
 />
 

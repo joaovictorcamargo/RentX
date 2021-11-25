@@ -1,36 +1,22 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { Splash } from '../screens/Splash';
 import { Home } from '../screens/Home';
 import { CarDetails } from '../screens/CarDetails';
 import { Scheduling } from '../screens/Scheduling';
 import { SchedulingDetails } from '../screens/SchedulingDetails';
 import { Confirmation } from '../screens/Confirmation';
 import { MyCars } from '../screens/MyCars';
-import { SignIn } from '../screens/SignIn';
-import { FirstStep } from '../screens/SignUp/FirstStep';
-import { SecondStep } from '../screens/SignUp/SecondStep';
-
-
 
 const { Navigator, Screen } = createStackNavigator();
 
-export function StackRoutes() {
+export function AppStackRoutes() {
     return (
         <Navigator headerMode="none"
-         initialRouteName="SignIn">
-            <Screen
-             name="SignIn"
-              component={SignIn} 
-              />
-              <Screen
-             name="FirstStep" 
-             component={FirstStep}
-              />
-                  <Screen
-             name="SecondStep" 
-             component={SecondStep}
+         initialRouteName="Home">
+                 <Screen
+             name="Home"
+              component={Home} 
               />
             
             <Screen
